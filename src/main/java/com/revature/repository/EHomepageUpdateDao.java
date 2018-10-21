@@ -10,13 +10,14 @@ import com.revature.util.HibernateUtil;
 
 public class EHomepageUpdateDao {
 
-	public List<User> update() {
+	public void update(User a) {
 		
 		Session session = HibernateUtil.getSession();
-		List<User> user = new ArrayList<>();
 		
+		session.beginTransaction();
+		session.update(a);
+		session.getTransaction().commit();
 		
-		return null;
 	}
 	
 }
