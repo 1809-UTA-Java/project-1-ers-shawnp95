@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <display-name>ServletChallenge</display-name>
+  
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<servlet-class>com.revature.servlet.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+  	<url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+
+	<servlet>
+		<servlet-name>EHomepage</servlet-name>
+		<servlet-class>com.revature.servlet.EHomepageServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>EHomepage</servlet-name>
+		<url-pattern>/viewI</url-pattern>
+	</servlet-mapping>
+	 
+	<servlet-mapping>
+		<servlet-name>EHomepage</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>
+	<!-- 
+	<servlet-mapping>
+		<servlet-name>EHomepage</servlet-name>
+		<url-pattern>/submitR</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>EHomepage</servlet-name>
+		<url-pattern>/viewPR</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>EHomepage</servlet-name>
+		<url-pattern>/viewRR</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>EHomepage</servlet-name>
+		<url-pattern>/logout</url-pattern>
+	</servlet-mapping>
+	-->
+	 
+	<servlet>
+		<servlet-name>EHomepageUpdate</servlet-name>
+		<servlet-class>com.revature.servlet.EHomepageUpdateServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EHomepageUpdate</servlet-name>
+		<url-pattern>/Eupdate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MHomepage</servlet-name>
+		<servlet-class>com.revature.servlet.MHomepageServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MHomepage</servlet-name>
+		<url-pattern>/MHomepage</url-pattern>
+	</servlet-mapping>
+</web-app>
