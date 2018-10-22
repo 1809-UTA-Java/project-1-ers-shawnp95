@@ -18,10 +18,10 @@
 		</property>
 		
 		<mapping resource="User.hbm.xml"></mapping>
-		<!-- <mapping resource="Reimbursement.hbm.xml"></mapping>
+		<mapping resource="Reimbursement.hbm.xml"></mapping>
 		<mapping resource="ReimbursementStatus.hbm.xml"></mapping>
 		<mapping resource="ReimbursementType.hbm.xml"></mapping>
-		-->
+		
 		<mapping resource="UserRole.hbm.xml"></mapping>
 		
 	</session-factory>

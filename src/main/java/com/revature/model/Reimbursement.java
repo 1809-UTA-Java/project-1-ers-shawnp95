@@ -1,16 +1,19 @@
 package com.revature.model;
 
+import java.sql.Timestamp;
+
 import oracle.sql.BLOB;
 import oracle.sql.TIMESTAMP;
 
 public class Reimbursement {
 
 	int R_ID;
-	int R_Amount;
+	Double R_Amount;
 	String R_Description;
 	BLOB R_Receipt;
-	TIMESTAMP R_Submitted;
-	TIMESTAMP R_Resolved;
+	//String R_Receipt;
+	String R_Submitted;
+	Timestamp R_Resolved;
 	int U_ID_Author;
 	int U_ID_Resolver;
 	int RT_Type;
@@ -24,12 +27,12 @@ public class Reimbursement {
 		R_ID = r_ID;
 	}
 
-	public int getR_Amount() {
+	public Double getR_Amount() {
 		return R_Amount;
 	}
 
-	public void setR_Amount(int r_Amount) {
-		R_Amount = r_Amount;
+	public void setR_Amount(Double double1) {
+		R_Amount = double1;
 	}
 
 	public String getR_Description() {
@@ -48,19 +51,19 @@ public class Reimbursement {
 		R_Receipt = r_Receipt;
 	}
 
-	public TIMESTAMP getR_Submitted() {
+	public String getR_Submitted() {
 		return R_Submitted;
 	}
 
-	public void setR_Submitted(TIMESTAMP r_Submitted) {
-		R_Submitted = r_Submitted;
+	public void setR_Submitted(String string) {
+		R_Submitted = string;
 	}
 
-	public TIMESTAMP getR_Resolved() {
+	public Timestamp getR_Resolved() {
 		return R_Resolved;
 	}
 
-	public void setR_Resolved(TIMESTAMP r_Resolved) {
+	public void setR_Resolved(Timestamp r_Resolved) {
 		R_Resolved = r_Resolved;
 	}
 
@@ -103,7 +106,7 @@ public class Reimbursement {
 		return "Reimbursement [R_ID=" + R_ID + ", R_Amount=" + R_Amount + ", R_Description=" + R_Description
 				+ ", R_Receipt=" + R_Receipt + ", R_Submitted=" + R_Submitted + ", R_Resolved=" + R_Resolved
 				+ ", U_ID_Author=" + U_ID_Author + ", U_ID_Resolver=" + U_ID_Resolver + ", RT_Type=" + RT_Type
-				+ ", RT_Status=" + RT_Status + "]";
+				+ ", RT_Status=" + RT_Status + "]\n\n";
 	}
 
 }

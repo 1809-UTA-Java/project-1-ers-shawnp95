@@ -70,6 +70,6 @@ public class User {
 	@Override
 	public String toString() {
 		return "User [U_ID=" + U_ID + ", U_UserName=" + U_UserName + ", U_PassWord=" + U_PassWord + ", U_FirstName="
-				+ U_FirstName + ", U_LastName=" + U_LastName + ", U_Email=" + U_Email + ", UR_ID=" + UR_ID + "]";
+				+ U_FirstName + ", U_LastName=" + U_LastName + ", U_Email=" + U_Email + ", UR_ID=" + UR_ID + "]\n\n";
 	}
 }

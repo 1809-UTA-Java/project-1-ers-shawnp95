@@ -17,7 +17,7 @@ import com.revature.util.HibernateUtil;
 
 public class EHomepageUpdateServlet extends HttpServlet {
 
-	List<User> U;
+	
 	EHomepageUpdateDao dao = new EHomepageUpdateDao();
 
 	@Override

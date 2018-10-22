@@ -8,7 +8,7 @@
 		<id name="R_ID" column="R_ID"></id>
 		<property name="R_Amount" column="R_Amount" />
 		<property name="R_Description" column="R_Description"></property>
-		<property name="R_Recipt" column="R_Recipt"></property>
+		<property name="R_Receipt" column="R_Receipt"></property>
 		<property name="U_ID_Author" column="U_ID_Author"></property>
 		<property name="U_ID_Resolver" column="U_ID_Resolver"></property>		
 		<property name="RT_Type" column="RT_Type"></property>		

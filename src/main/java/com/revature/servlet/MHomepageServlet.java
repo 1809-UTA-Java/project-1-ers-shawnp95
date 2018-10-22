@@ -11,26 +11,33 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.revature.model.Reimbursement;
 import com.revature.model.User;
-import com.revature.repository.EHomepageDao;
+import com.revature.repository.MHomepageDao;
 
-public class EHomepageServlet extends HttpServlet{
+public class MHomepageServlet extends HttpServlet{
 
-	//User p = new User();
-	
 	List<User> U;
-	EHomepageDao dao = new EHomepageDao();
+	List<Reimbursement> R;
+	MHomepageDao dao = new MHomepageDao();
 	
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		//req.getAttribute("user");
-		
-		User user = (User) getServletContext().getAttribute("user");
-
-		U = dao.viewInfo(user.getU_UserName());
+	
+		//User user = (User) getServletContext().getAttribute("user");
+		U = dao.viewAll();
 		
 		PrintWriter pw = resp.getWriter();
 		pw.print(U);
 	}
 	
-
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		
+		//Session session = HibernateUtil.getSession();
+		PrintWriter pw = resp.getWriter();
+		
+		String arg1 = req.getParameter("EmployerId");
+		
+		R = dao.empId(arg1);
+		pw.print(R);
+	}
 }

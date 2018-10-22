@@ -26,12 +26,12 @@
 		<servlet-name>EHomepage</servlet-name>
 		<url-pattern>/update</url-pattern>
 	</servlet-mapping>
-	<!-- 
+	 
 	<servlet-mapping>
 		<servlet-name>EHomepage</servlet-name>
 		<url-pattern>/submitR</url-pattern>
 	</servlet-mapping>
-	
+	<!-- 
 	<servlet-mapping>
 		<servlet-name>EHomepage</servlet-name>
 		<url-pattern>/viewPR</url-pattern>
@@ -59,12 +59,52 @@
 	</servlet-mapping>
 	
 	<servlet>
+		<servlet-name>EHomepageView</servlet-name>
+		<servlet-class>com.revature.servlet.EHomepageViewServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EHomepageView</servlet-name>
+		<url-pattern>/viewPR</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>EHomepageView</servlet-name>
+		<url-pattern>/viewRR</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EHomepageSubmit</servlet-name>
+		<servlet-class>com.revature.servlet.EHomepageSubmitServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EHomepageSubmit</servlet-name>
+		<url-pattern>/submit</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
 		<servlet-name>MHomepage</servlet-name>
 		<servlet-class>com.revature.servlet.MHomepageServlet</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
 		<servlet-name>MHomepage</servlet-name>
-		<url-pattern>/MHomepage</url-pattern>
+		<url-pattern>/viewE</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>MHomepage</servlet-name>
+		<url-pattern>/employerR</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MHomepageView</servlet-name>
+		<servlet-class>com.revature.servlet.MHomepageViewServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>MHomepageView</servlet-name>
+		<url-pattern>/viewAllP</url-pattern>
 	</servlet-mapping>
 </web-app>

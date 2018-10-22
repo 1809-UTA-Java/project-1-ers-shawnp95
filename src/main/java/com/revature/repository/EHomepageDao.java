@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.hibernate.Session;
 
+import com.revature.model.Reimbursement;
 import com.revature.model.User;
 import com.revature.util.HibernateUtil;
 
@@ -15,4 +16,6 @@ public class EHomepageDao {
 		
 		return session.createQuery("from User Where U_UserName = :nameVar").setString("nameVar", UserName).list();
 	}
+	
+
 }
