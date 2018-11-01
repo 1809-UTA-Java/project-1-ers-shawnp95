@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.revature.model.ReimbursementType" table="Ers_Reimbursement_Type">
+		<id name="RT_ID" column="RT_ID"></id>
+		<property name="RT_Type" column="RT_Type" />	
+	</class>
+</hibernate-mapping>
